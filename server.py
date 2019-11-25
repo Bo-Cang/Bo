@@ -1,4 +1,4 @@
-import bottle, route
+import bottle
 
 APP = bottle.Bottle()
 
