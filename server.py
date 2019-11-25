@@ -1,8 +1,8 @@
-import bottle, route
+import bottle
 
 APP = bottle.Bottle()
 
-@APP.route('/')
+@APP.get('/')
 def index():
   return '<p>H123456789ello</p>'
 
