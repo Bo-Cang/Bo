@@ -1,10 +1,8 @@
 import bottle
-
-APP = bottle.Bottle()
-
-@APP.get('/')
+from bottle import route
+@route('/')
 def index():
   return '<p>H123ello</p>'
 
 if __name__ == '__main__':
-  bottle.run(application=APP)
+  run(application=APP)
